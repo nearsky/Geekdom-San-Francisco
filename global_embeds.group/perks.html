@@ -1,0 +1,23 @@
+<div id="perks" class="container">
+  <h1>Membership has its perks.</h1>
+  <h3>Geekdom provides dozens of great perks to its members.</h3>
+  <div class="row-fluid">
+    <ul class="span4">
+      {exp:channel:entries channel="perks" limit="5" sort="asc"}
+        <li class="perk"><span class="icon batch-star"></span> {title}</li>
+      {/exp:channel:entries}
+    </ul>
+    
+    <ul class="span4">
+      {exp:channel:entries channel="perks" limit="5" offset="5" sort="asc"}
+        <li class="perk"><span class="icon batch-star"></span> {title}</li>
+      {/exp:channel:entries}
+    </ul>
+
+    <ul class="span4">
+      {exp:channel:entries channel="perks" limit="5" offset="10" sort="asc"}
+        <li class="perk"><span class="icon batch-star"></span> {title}</li>
+      {/exp:channel:entries}
+    </ul>
+  </div>
+</div>

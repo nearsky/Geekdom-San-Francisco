@@ -1,0 +1,271 @@
+{header_sanantonio}
+<article id="sanantonio" class="content">
+  <div id="welcome-container">
+    <div id="welcome" class="container">
+      <div class="row-fluid">
+        <div id="whatis" class="span4">
+          <h1>What is Geekdom?</h1>
+          <p>Geekdom is a new kind of <span class="highlight">collaborative coworking space</span> where Entrepreneurs, Technologists, Developers, Makers & Creatives help each other build businesses & other cool things together.</p>
+          <div>
+            <a href="/san-antonio/tour" class="red-btn">Take the Tour</a>
+          </div>
+        </div>
+      
+        <div id="welcome-video" class="span8">
+          <div id="play">
+            <a data-fancybox-type="iframe" href="http://player.vimeo.com/video/68385518" class="video-fancy">
+              <div>
+                <img src="{image_dir}/vid-box.png" />
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div><!-- row-fluid -->
+    </div><!-- container -->
+  </div><!-- #welcoming -->
+  
+  <div id="startups" class="container">
+    <div class="row-fluid">
+      <div class="span2">
+        <h2>Home to over 200 Startups!</h2>
+      </div>
+      
+      <div id="startups-list" class="span10 row-fluid">
+        {exp:channel:entries channel="startups" limit="6" orderby="random"}
+          <div class="span2 startup">
+          <a href="{startup_url}" target="_blank">
+            <img src="{startup_logo}" />
+          </a>
+          </div>
+        {/exp:channel:entries}
+      </div>
+    </div>
+  </div><!-- startups -->
+  
+  <div class="container">
+    <div class="quote-gray row-fluid">
+      <div class="span2">
+        <div class="icon left-double-quote"></div>
+      </div>
+      <div class="span10">
+        <em>Geekdom is the largest coworking space in Texas, with 45,000 Sq Ft of Geeks and Entrepreneurs.</em>
+      </div>
+    </div>
+  </div><!-- quote -->
+  
+  {dot_border}
+  
+  <div id="signup" class="container">
+    <div class="row-fluid">
+      <div class="span4">
+        <h2>No contracts.</h2>
+        <h2>No deposits.</h2>
+        <h2>No landlords.</h2>
+        <h2 class="red">Just smart people changing the world.</h2>
+        <div id="perks">
+          <ul>
+            {exp:channel:entries channel="perks" orderby="entry_id" limit="5" sort="asc"}
+              <li class="perk"><span class="icon batch-star"></span> {title}</li>
+            {/exp:channel:entries}
+          </ul>
+        </div>
+        
+        <div class="pad">
+          <h2><a href="/san-antonio/tour" id="tour-btn">Take a Tour</a></h2>
+        </div>
+        
+      </div>
+
+      <div id="plans" class="row-fluid span8">
+        <div class="plan span6">
+          <div class="plan-type">
+            <h2>Hot Desk</h2>
+          </div>
+          <div class="plan-details">
+            <div class="plan-price">
+              <h3>$50</h3>
+            </div>
+            <div class="plan-description">
+              <p>Shared Community Space</p>
+              <p>Desk in Community Areas</p>
+              <p>24-7 Access</p>
+              <p>2 Hours/m Conference Room</p>
+            </div>
+          </div>
+          <div class="apply">
+            <a href="/san-antonio/signup" class="red-btn">Apply Now</a>
+          </div>
+        </div><!-- .plan -->
+        
+        <div class="plan span6">
+          <div class="plan-type">
+            <h2>Tech Startup Desk</h2>
+          </div>
+          <div class="plan-details">
+            <div class="plan-price">
+              <h3>$200</h3>
+            </div>
+            <div class="plan-description">
+              <p>Dedicated Personal Desk</p>
+              <p>Office Space</p>
+              <p>24-7 Access</p>
+              <p>Mailing Address &amp; Parking</p>
+            </div>
+          </div>
+          <div class="apply">
+            <a href="/san-antonio/signup" class="red-btn">Apply Now</a>
+          </div>
+<!--          <div class="startups">
+            $150/Month for Startups!
+          </div>-->
+        </div><!-- .plan -->
+      </div><!-- #plans -->
+    </div><!-- row -->
+  </div><!-- #signup -->
+
+  {dot_border}
+  
+  <div id="members">
+    <div class="center">
+      <h1>The Members</h1>
+      <h3>Some of the 600+ members that call Geekdom home. <a href="#" id="see-more-geeks">See More.</a></h3>
+    </div>
+
+    <div id="members-container">
+      {embed="global_embeds/members"}
+    </div>
+  </div>
+
+  {dot_border}
+
+  <div id="events" class="container">
+    <div class="row-fluid">
+      <div id="events-list" class="span8">
+        <h1 class="black">Let's get together and hang out.</h1>
+        <h3>We're a pretty lively bunch over here, there's always something cool going on.</h3>
+        <div class="pad"></div>
+        
+      </div>
+
+
+  <script type="text/javascript">
+  function formatHours(hour) {
+    if (hour > 12)
+      hour = hour - 12;
+    return hour;
+  }
+  
+  function isAmOrPm(hour) {
+    if (hour >= 12)
+      return "PM";
+    else
+      return "AM";
+  }
+  
+  function formatMinutes(minute) {
+    if (minute < 10)
+      minute = "0" + minute;
+    return minute;
+  }
+  
+  function formatMonth(month) {
+    switch (month) {
+      case 0:
+        return "Jan";
+        break;
+      case 1:
+        return "Feb";
+      case 2:
+        return "Mar";
+      case 3:
+        return "Apr";
+      case 4:
+        return "May";
+      case 5:
+        return "Jun";
+      case 6:
+        return "Jul";
+      case 7:
+        return "Aug";
+      case 8:
+        return "Sep";
+      case 9:
+        return "Oct";
+      case 10:
+        return "Nov";
+      case 11:
+        return "Dec";
+    }
+  }
+
+  $(document).ready(function(){
+    var feedUrl = "http://www.google.com/calendar/feeds/info%40geekdom.com/public/full?orderby=starttime&sortorder=a&futureevents=true&fields=entry(title,gd:when,content,link)&alt=json";
+    var feedUrl = "http://www.google.com/calendar/feeds/geekdomllc%40gmail.com/public/full?orderby=starttime&sortorder=a&futureevents=true&fields=entry(title,gd:when,content,link)&alt=json";
+  		  
+    $.getJSON(feedUrl, function(data){
+      $.each(data.feed.entry, function(i, item){
+        if(i > 0 && i <= 3) {
+          var event_url = item.link[0].href;
+          var event_title = item.title.$t;
+          var event_content = item.content.$t;
+          
+          var event_date = new Date(item.gd$when[0].startTime);
+          var event_day = event_date.getDate();
+          var event_month = formatMonth(event_date.getMonth());
+
+          var event_hours = formatHours(event_date.getHours());
+          var event_minutes = formatMinutes(event_date.getMinutes());
+          var ampm = isAmOrPm(event_date.getHours());
+          var event_time = event_hours + ':' + event_minutes + ampm;
+          
+          $('#events-list').append(
+            "<div class='event row-fluid'>"
+            + "<div class='event-date span2'>"
+            + "<div class='event-month'>"
+            + event_month
+            + "</div>"
+            + "<div class='event-day'>"
+            + event_day 
+            + "</div>"
+            + "<div class='event-time'>"
+            + event_time
+            + "</div>"
+            + "</div>"
+            + "<div class='span10'>"
+            + "<h3 class='event-title red'>"
+            + event_title
+            + "</h3>"
+            + "<p class='event-content'>"
+            + event_content
+            + "</p>"
+            + "<a href='"
+            + event_url
+            + "' target='_blank'>Event Details <span class='icon batch-arrow-right'></span></a>"
+            + "</div>"
+            + "</div>"
+          );
+        }
+      });
+    });
+    
+  });
+  </script>
+
+      <div class="span4">
+        <div class="red-box">
+          <h1>Looking for a great place to host your event?</h1>
+          <p class="small">Send us a message about your party or event and we'll be sure to contact you.</p>
+        </div>
+        <div class="pad">
+          <a href="/san-antonio/contact" class="black-btn">Contact Us</a>
+        </div>
+
+        <div class="pad-big">
+          <a href="/san-antonio/events" class="red-btn">View Full Calendar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{footer_site}

@@ -1,0 +1,285 @@
+header #home-nav {
+font-family: 'Ruda','Helvetica','Arial';
+}
+header #home-nav .navbar-inner {
+height: 70px;
+background-color: #000000;
+background-image: none;
+}
+header #home-nav .navbar-inner .brand {
+margin-top: 10px;
+}
+header #home-nav .navbar-inner ul.nav {
+font-size: 16px;
+margin-top: 15px;
+}
+header #home-nav .navbar-inner ul.nav:first-child li {
+padding-left: 15px;
+}
+header #home-nav .navbar-inner ul.nav li>a {
+color: #fbfbfb;
+text-shadow: 0px 1px 0px #000000;
+}
+header #home-nav .navbar-inner ul.nav li>a:hover {
+color: #ce0f14;
+text-shadow: 0px 0px 5px #ce0f14;
+}
+header #home-nav .navbar-inner ul.nav li>a#login {
+margin-top: 1px;
+font-size: 12px;
+}
+header #home-nav .navbar-inner ul.nav li.divider-vertical {
+height: 69px;
+margin-top: -14px;
+}
+
+#chooser-header {
+  background-color: #ce0f14;
+  color: #fbfbfb;
+  margin: 0 auto;
+  padding-top: 0;
+  height: 45px;*zoom:1;
+}
+#chooser-header:before,#chooser-header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#chooser-header:after {
+  clear: both;
+}
+#chooser-header:before,#chooser-header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#chooser-header:after {
+  clear: both;
+}
+#chooser-header h3 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 12px 0 8px;
+  color: #fbfbfb;
+}
+#chooser-header h3 img {
+  margin-top: -4px;
+}
+#chooser {
+  position: relative;
+  background-color: #fff;
+  max-height: 450px;
+}
+#chooser #sa {
+  background-image: url('{site_url}themes/geekdom/default_site/images/bg-sa-large.jpg');
+  background-position: left top;
+}
+#chooser #sf {
+  background-image: url('{site_url}themes/geekdom/default_site/images/bg-sf-large.jpg');
+  background-position: center top;
+}
+#chooser #gdx {
+  background-image: url('{site_url}themes/geekdom/default_site/images/bg-gdx-large.jpg');
+  background-position: right top;
+}
+
+#chooser .option {
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.kwicks {
+  width: 100%;
+}
+
+.kwicks > .option {
+  float: left;
+  width: 33%;
+}
+
+#chooser .option:hover {}
+
+#chooser .option .arrow-down-right {
+  float: right;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-top: 20px solid #ce0f14;
+}
+#chooser .option .arrow-down-left {
+  float: left;
+  width: 0;
+  height: 0;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ce0f14;
+}
+#chooser .option .location {
+  width: 200px;
+  height: 200px;
+  margin: 125px auto;
+  color: #fbfbfb;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 50%;
+  -webkit-transition: background-color 0.35s ease;
+  -moz-transition: background-color 0.35s ease;
+  -o-transition: background-color 0.35s ease;
+  transition: background-color 0.35s ease;
+}
+#chooser .option .location .icon {
+  padding-top: 70px;
+  font-size: 25px;
+}
+#chooser .option .location .icon-img {
+  padding-top: 60px;
+  padding-bottom: 2px;
+}
+#chooser .option .location h3 {
+  padding-top: 2px;
+  font-family: 'Ruda-Black';
+  color: #fbfbfb;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#chooser .option .location h4 {
+  color: #fbfbfb;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+#chooser .option .location h5 {
+  color: #fbfbfb;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+  font-weight: normal;
+}
+#chooser .option:hover .location {
+  background-color: rgba(206, 15, 20, 0.85);
+}
+#chooser .option:hover .location .icon {
+  color: #ae0f0f;
+}
+#locations {
+  text-align: center;
+}
+#locations h1,#locations h2 {
+  display: inline-block;
+}
+#locations h2 {
+  font-size: 20px;
+}
+#locations .location {
+  margin-top: 25px;
+  border: 1px solid #c8c8c8;
+  background-color: #fbfbfb;
+}
+#locations .location>div {
+  width: 75%;
+  padding: 0;
+  margin: 0 auto;
+}
+#locations .location .city {
+  margin: 25px auto 15px;
+}
+#locations .location .city .icon {
+  color: #ce0f14;
+  font-size: 32px;
+  padding-top: 5px;
+}
+#locations .location .city .icon-img {
+  text-align: right;
+}
+#locations .location .city h3,#locations .location .city h4 {
+  color: #000000;
+  text-align: left;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+  padding-left: 30px;
+}
+#locations .location .city h3 {
+  font-family: "Ruda-Bold",Arial,sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+#locations .location .description {
+  border-top: 1px solid #c8c8c8;
+  font-size: 16px;
+}
+#locations .location .contact {
+  font-size: 16px;
+  font-weight: bold;
+}
+#locations .location .visit {
+  margin: 25px auto;
+}
+#locations #san-francisco.location .visit,
+#locations #geekdomX.location .visit {
+  margin-top: 35px;
+}
+
+
+#slider {
+  margin: 55px auto 45px;
+}
+#ready {
+  text-align: center;
+}
+#ready h2 {
+  display: inline-block;
+  line-height: 32px;
+}
+#ready #sign-up {
+  display: inline-block;
+  width: 200px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+#footer {
+  color: #fbfbfb;
+  background-color: #000000;
+  border-top: 10px solid #ce0f14;
+  text-align: center;
+  padding: 45px 0;
+}
+#footer h1 {
+  display: inline-block;
+  color: #ce0f14;
+  margin-bottom: 25px;
+}
+#footer h2 {
+  display: inline-block;
+  color: #fbfbfb;
+  font-size: 20px;
+}
+#footer #contact-form form label,#footer #contact-form form input,#footer #contact-form form select,#footer #contact-form form textarea {
+  font-family: "Ruda",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+}
+#footer #contact-form form label {
+  text-align: right;
+  margin-top: 5px;
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+#footer #contact-form form input,#footer #contact-form form select,#footer #contact-form form textarea {
+  border: 3px solid #efefef;
+  border-radius: none;
+  width: 95%;
+  margin: 0px auto 15px;
+  padding: 8px;
+}
+
+#footer #contact-form form select {
+  width: 97%;
+}
+
+#footer #contact-form form textarea {
+  height: 200px;
+}
+#footer #contact-form form button {}

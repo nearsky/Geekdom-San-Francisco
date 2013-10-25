@@ -1,0 +1,41 @@
+{header_site}
+<article id="events" class="content container">
+{dot_border}
+<div class="center">
+	<h1>Events</h1>
+	<h3>We're a pretty lively bunch over here.  There is always something cool going on.</h3>
+</div>
+
+<div class="row-fluid">
+	<div id="events-list" class="span8">
+		{exp:magpie url="http://www.google.com/calendar/feeds/info%40geekdom.com/public/full?orderby=starttime&sortorder=a&futureevents=true&fields=entry(title,gd:when,content,link)" limit="7" refresh="720"}
+			{magpie:items}
+				{events}
+			{/magpie:items}
+		{/exp:magpie}
+	</div>
+
+	<!-- break -->
+
+	<div class="span4">
+		<div class="red-box">
+			<h1>Looking for a great place to host your event?</h1>
+			<p class="small">Send us a message about your party or event. We'll be sure to follow up.</p>
+		</div>
+
+		<div class="pad">
+			<a href="/contact" class="black-btn">Contact Us</a>
+		</div>
+
+		<h2>Join us and attend these awesome events for free!</h2>
+
+		<div class="pad">
+		<a href="/join" class="red-btn">Sign Me Up!</a>
+		</div>
+	</div>
+</div>
+
+
+{dot_border}
+</article>
+{footer_site}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    {if "{segment_2}" == ""}
+      <title>Geekdom - Collaborative Coworking Space in San Antonio Texas</title>
+    {if:elseif "{segment_2}" == "join"}
+      <title>Geekdom -  Coworking and Collaborative Space Membership Levels in San Antonio Texas</title>
+    {if:elseif "{segment_2}" == "mission"}
+      <title>Geekdom - The Mission of our Coworking Space in San Antonio Texas</title>
+    {if:elseif "{segment_2}" == "events"}
+      <title>Geekdom - Upcoming Events at our Coworking Collaborative Workspace in San Antonio Texas</title>
+    {if:elseif "{segment_2}" == "contact"}
+      <title>Geekdom - Contact Us About our Coworking Space in San Antonio Texas</title>
+    {if:elseif "{segment_2}" == "tour"}
+      <title>Geekdom - Tour our Collaborative Coworking Space in San Antonio Texas</title>
+    {if:elseif "{segment_2}" == "people"}
+      <title>Geekdom - The People of Geekdom in San Antonio Texas</title>
+    {if:elseif "{segment_2}" == "programs"}
+      <title>Geekdom - The Programs at our Collaborative Space in San Antonio Texas</title>
+    {if:else}
+      <title>Geekdom - Collaborative Coworking Space in San Antonio Texas</title>
+    {/if}
+      
+    <meta name="description" content="">
+    <meta name="author" content="brlrl">
+
+    {css}
+    {shim}
+    {js}
+  </head>
+  <body>
+    <header>
+      <div id="main-nav" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"  >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </a>
+  
+            <div>
+              <a class="brand" href="/san-antonio">
+                <img src="{image_dir}/logo-nav.png">
+              </a>
+              <a id="location-selector">
+               <span class="small icon batch-mapmarker"></span>
+              </a>
+            </div>
+  
+            <div id="location-screen" class="pull-left">
+              <h5>Choose your Geekdom</h5>
+              <ul>
+                <li><a href="/"><span class="icon batch-arrow-right"></span> Geekdom Home</a></li>
+                <li><a href="/san-antonio"><span class="icon batch-arrow-right"></span> San Antonio</a></li>
+                <li><a href="/san-francisco"><span class="icon batch-arrow-right"></span> San Francisco</a></li>
+              </ul>
+            </div>
+
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="/san-antonio/tour">Tour</a></li>
+                <li><a href="/san-antonio/mission">Mission</a></li>
+                <li><a href="/san-antonio/people">People</a></li>
+                <li><a href="/san-antonio/events">Events</a></li>
+                <li><a href="/san-antonio/programs">Programs</a></li>
+                <li><a href="/san-antonio/contact">Contact</a></li>
+                
+                <li class="socials">
+                  <a href="https://twitter.com/geekdom" target="_blank"><span class="twitter"></span></a>
+                  <a href="https://www.facebook.com/GeekdomSA" target="_blank"><span class="facebook"></span></a>
+                  <a href="https://plus.google.com/104770330301907451616" rel="publisher" target="_blank"><span class="gplus"></span></a>
+                </li>
+                
+              </ul>
+              <ul class="nav pull-right">
+                <li class="divider-vertical"></li>
+                <li><a href="/san-antonio/join">Join Geekdom</a></li>
+                <li>
+                  <a href="http://members.geekdom.com/accounts/signin/" id="login">LOGIN</a>
+                </li>
+                <li class="divider-vertical"></li>
+              </ul>
+
+              <!--
+              <div id="login-screen">
+                <form>
+                  <div class="control-group">
+                    <input type="text" placeholder="Username">
+                  </div>
+                  <div class="control-group">
+                    <input type="password" placeholder="Password">
+                  </div>
+                  
+                  <div class="action">
+                    <button type="submit" class="red-btn">Login</button>
+                    <label class="checkbox">
+                      <input type="checkbox"> Remember Me
+                    </label>
+                  </div>
+                </form>
+                <div class="small">
+                  <a href="#">Forgot your password?</a>
+                </div>
+              </div><!-- #login-screen -->
+            </div><!-- .nav-collapse -->
+  
+          </div><!-- .container -->
+        </div><!-- .navbar-inner -->
+      </div><!-- .navbar -->
+    </header>

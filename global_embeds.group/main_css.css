@@ -1,0 +1,629 @@
+body {
+  padding-top: 70px;
+  font-size: 18px;
+  color: #000000;
+  font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+  text-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+body .container {
+  max-width: 940px;
+}
+body article {
+  margin-top: 20px;
+}
+a {
+  color: #ce0f14;
+  -webkit-transition: color 0.25s ease;
+  -moz-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+}
+a:hover {
+  text-decoration: none;
+  color: #ae0f0f;
+}
+h1 {
+  font-family: 'Ruda-Bold', sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 8px auto;
+  padding: 2px;
+  color: #ce0f14;
+}
+h2 {
+  font-family: 'Ruda', sans-serif;
+  font-size: 25px;
+  color: #000000;
+  font-weight: normal;
+  margin: 6px auto;
+  padding: 2px;
+  line-height: 32px;
+}
+h3 {
+  font-family: 'Ruda', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  font-weight: normal;
+  margin: 4px auto;
+  padding: 0;
+}
+h4 {
+  font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #717171;
+  font-weight: normal;
+  margin: 2px auto;
+  padding: 0;
+}
+p {
+  font-family: "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+header #misc-nav {
+font-family: 'Ruda','Helvetica Neue Light',sans-serif;
+}
+header #misc-nav .navbar-inner {
+height: 70px;
+background-color: #000000;
+background-image: none;
+}
+header #misc-nav .navbar-inner .brand {
+margin-top: 10px;
+}
+header #misc-nav .navbar-inner ul.nav {
+font-size: 16px;
+margin-top: 15px;
+}
+header #misc-nav .navbar-inner ul.nav:first-child li {
+padding-left: 15px;
+}
+header #misc-nav .navbar-inner ul.nav li>a {
+color: #fbfbfb;
+text-shadow: 0px 1px 0px #000000;
+}
+header #misc-nav .navbar-inner ul.nav li>a:hover {
+color: #ce0f14;
+text-shadow: 0px 0px 5px #ce0f14;
+}
+header #misc-nav .navbar-inner ul.nav li>a#login {
+margin-top: 1px;
+font-size: 12px;
+}
+header #misc-nav .navbar-inner ul.nav li.divider-vertical {
+height: 69px;
+margin-top: -14px;
+}
+
+
+.highlight {
+  font-family: "Ruda-Black", sans-serif;
+  font-weight: bold;
+  color: #ce0f14;
+}
+.box-sized {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+#intro .blurb-bubble {
+  float: left;
+  position: relative;
+  margin-top: -75px;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  background-color: #ce0f14;
+}
+#intro .blurb-bubble h1 {
+  padding: 20px;
+  padding-top: 115px;
+  padding-bottom: 0;
+  color: #fbfbfb;
+  line-height: 32px;
+}
+#intro .blurb-bubble .arrow-down {
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-top: 20px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 40px solid #ce0f14;
+}
+#intro .blurb {
+  float: right;
+  width: 75%;
+  line-height: 30px;
+}
+.dot-border {
+  margin: 25px auto;
+  height: 15px;
+  background-image: url('{site_url}themes/geekdom/default_site/images/dots.png');
+  background-repeat: repeat-x;
+}
+.red-btn {
+  font-family: "Ruda", Arial, sans-serif;
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 auto;
+  width: 100%;
+  border: 3px solid #ae0f0f;
+  font-size: 16px;
+  color: #fbfbfb;
+  background-color: #ce0f14;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: margin .25s ease;
+  -webkit-transition: margin .25s ease;
+  -o-transition: margin .25s ease;
+  transition: margin .25s ease;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+.red-btn:hover {
+  color: #fbfbfb;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+input[type="submit"].red-btn {
+  padding: 10px 25px;
+  width: 100%;
+  border: 3px solid #ae0f0f !important;
+}
+
+.black-btn {
+  font-family: "Ruda", Arial, sans-serif;
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 auto;
+  width: 100%;
+  border: 3px solid #717171;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #ce0f14;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  background-color: #000000;
+  -moz-transition: margin .25s ease;
+  -webkit-transition: margin .25s ease;
+  -o-transition: margin .25s ease;
+  transition: margin .25s ease;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+.black-btn:hover {
+  color: #fbfbfb;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.dropdown-triangle-up,
+.dropdown-triangle-down {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+.dropdown-triangle-down {
+  border-top: 6px solid #717171;
+}
+.dropdown-triangle-up {
+  border-bottom: 6px solid #717171;
+}
+.socials {
+  display: inline-block;
+}
+.socials a > .twitter,
+.socials a > .facebook,
+.socials a > .gplus {
+  display: inline-block;
+  height: 26px;
+  width: 26px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.socials a > .twitter:hover,
+.socials a > .facebook:hover,
+.socials a > .gplus:hover {
+  -webkit-transition: background-image 0.25s ease;
+  -moz-transition: background-image 0.25s ease;
+  -o-transition: background-image 0.25s ease;
+  transition: background-image 0.25s ease;
+}
+.socials a > .twitter {
+  background-image: url('{site_url}themes/geekdom/default_site/images/twitter_gry.png');
+}
+
+footer .socials a > .twitter {
+  background-image: url('{site_url}themes/geekdom/default_site/images/twitter_gry_footer.png');
+}
+
+.socials a > .twitter:hover {
+  background-image: url('{site_url}themes/geekdom/default_site/images/twitter_red.png');
+}
+
+.socials a > .facebook {
+  background-image: url('{site_url}themes/geekdom/default_site/images/fb_gry.png');
+}
+footer .socials a > .facebook {
+  background-image: url('{site_url}themes/geekdom/default_site/images/fb_gry_footer.png');
+}
+.socials a > .facebook:hover {
+  background-image: url('{site_url}themes/geekdom/default_site/images/fb_red.png');
+}
+
+.socials a > .gplus {
+  background-image: url('{site_url}themes/geekdom/default_site/images/g_gry.png');
+}
+footer .socials a > .gplus {
+  background-image: url('{site_url}themes/geekdom/default_site/images/g_gry_footer.png');
+}
+.socials a > .gplus:hover {
+  background-image: url('{site_url}themes/geekdom/default_site/images/g_red.png');
+}
+
+[class^="quote-"],
+[class*=" quote-"] {
+  font-family: "Ruda";
+  font-size: 22px;
+  line-height: 38px;
+  border-radius: 5px;
+}
+[class^="quote-"] .left-double-quote,
+[class*=" quote-"] .left-double-quote {
+  text-align: center;
+}
+[class^="quote-"] .left-double-quote:before,
+[class*=" quote-"] .left-double-quote:before {
+  position: relative;
+  top: 50px;
+  content: "\201C";
+  font-size: 150px;
+  margin-top: 50px;
+  font-family: "Times New Roman";
+}
+.quote-red {
+  color: #fbfbfb;
+  background-color: #ce0f14;
+  margin: 25px auto;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.quote-red .left-double-quote:before {
+  color: #ae0f0f;
+}
+
+.quote-white,
+.quote-gray {
+  color: #717171;
+  background-color: #efefef;
+  margin: 25px auto;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.quote-white .left-double-quote:before,
+.quote-gray .left-double-quote:before {
+  color: #717171;
+}
+
+.quote-white {
+  background: none;
+}
+
+.quote-white .left-double-quote {
+  top: 0 !important;
+  margin-top: -50px !important;
+  padding-top: 0 !important;
+  line-height: 5px;
+  text-align: left !important;
+}
+
+article.content .center {
+  text-align: center;
+  margin: 5px auto 10px;
+  padding: 0;
+}
+article.content .cta {
+  margin: 10px auto;
+  padding: 10px 0;
+  text-align: center;
+}
+article.content .cta h2 {
+  display:inline-block;
+  line-height: 40px;
+}
+article.content .cta .red-btn {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  width: 25%;
+}
+article.content .cta .red-btn:hover {
+
+}
+
+#perks ul {
+  padding: 0;
+  margin: 5px;
+}
+#perks li.perk {
+  font-size: 17px;
+  line-height: 24px;
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 1px 0;
+}
+#perks li.perk .icon {
+  color: #ce0f14;
+  font-size: 20px;
+}
+
+.red-box {
+  color: #FBFBFB;
+  background-color: #CE0F14;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.red-box h1 {
+  color: #FBFBFB;
+}
+
+.pad {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+#location-info img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#location-info .map-quote {
+  margin-top: 25px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #efefef;
+}
+
+#location-info .map-quote div p {
+  margin: 15px auto;
+}
+
+#location-info .map-quote .icon {
+  position: relative;
+  color: #ccc;
+  font-size: 55px;
+  line-height: 60px;
+  text-align: center;
+  top: 40px;
+}
+
+a:hover .batch-arrow-right,
+a:hover .batch-arrow-down {
+  transition: margin .25s ease;
+  -o-transition: margin .25s ease;
+  -webkit-transition: margin .25s ease;
+  -moz-transition: margin .25s ease;
+  
+  transition: all .25s ease;
+  -o-transition: all .25s ease;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+}
+
+a .batch-arrow-right {
+  margin-left: 0px;
+}
+
+a:hover .batch-arrow-right {
+  margin-left: 5px;
+}
+
+a:hover .batch-arrow-down {
+  
+}
+
+.navbar .brand {
+  margin-right: 4px !important;
+  padding-right: 0px !important;
+}
+
+/* EVENTS */
+#events-list .event {
+  background-color: #efefef;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 2px #000;
+  padding: 10px;
+
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#events-list .event .event-date {
+  text-align: center;
+  font-family: "Ruda";
+  border-right: 1px solid #e1e1e1;
+  height: 100px;
+  padding-top: 15px;
+}
+
+#events-list .event .event-date .event-day {
+  font-size: 32px;
+  line-height: 34px;
+}
+
+
+#events-list .event h3 {
+  color: #CE0F14;
+}
+
+#events-list .event p {
+  font-size: 16px;
+  margin: 5px auto;
+  height: 50px;
+  overflow: hidden;
+}
+
+#events-list .event p:after {content: "..."}
+
+#events-list .event:hover {
+  box-sizing: none;
+}
+
+/* HEADER LOCATIONS */
+header #main-nav .navbar-inner #location-selector {
+  float: left;
+  display: inline-block;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  padding-top: 28px;
+}
+
+header #main-nav .navbar-inner #location-selector .icon { color: #fbfbfb; }
+
+header #main-nav .navbar-inner #location-screen {
+  position: absolute;
+  float: left;
+  padding: 20px;
+}
+
+header #main-nav .navbar-inner #location-screen h5 {
+  font-size: 14px;
+  color: #717171;
+  margin: 0 auto;
+}
+
+header #main-nav .navbar-inner #location-screen ul {
+  padding: 2px;
+  margin: 4px auto 1px;
+}
+
+header #main-nav .navbar-inner #location-screen ul li {
+  list-style: none;
+  margin: 2px auto;
+  padding: 2px;
+}
+
+header #main-nav .navbar-inner #location-screen ul li a {
+  color: #fbfbfb;
+  font-size: 12px;
+}
+
+/* SLIDERS */
+#slides {
+  position: relative;
+  margin: 45px auto 1px;
+  padding-bottom: 1px;
+}
+
+/* STARTUPS */
+#startups-list {
+  margin: 15px auto;
+}
+.startup {
+  box-shadow: 0px 0px 2px #717171;
+  margin-top: 10px;
+}
+
+.startup a img {
+  text-align: center;
+  margin: 0 auto !important;
+  width: 95%;
+  padding: 2px;
+}
+
+/* MEMBERS */
+.geeks {
+  position: relative;
+}
+
+.geek {
+  cursor: hand;
+}
+
+.geek-info {
+  position: absolute;
+  top: 45px;
+  left: 25%;
+  width: 450px;
+  margin: 0 auto;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.geek-info .batch-close-btn:before {
+  content: "\F14E";
+  position: absolute;
+  color: #fbfbfb;
+  font-size: 18px;
+  float: left;
+  top: 5px;
+  right: 5px;
+}
+
+.geek-info h3 {
+  color: #fff;
+}
+
+.geek-info p {
+  margin: 8px auto;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+select {
+  background-image: url('{site_url}themes/geekdom/default_site/images/bg-dd-arrow.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-position-x: 98%;
+  padding: 1px 0 0 0;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none !important;
+  appearance: none;
+  padding: 12px;
+  margin: 0 auto 10px;
+  box-sizing: border-box;
+  border: 3px solid #efefef;
+  border-radius: 0;
+}
+
+#funding-btn {
+  position: fixed;
+  top: 25%;
+  right: -55px;
+  height: 159px;
+  
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#funding-btn:hover {
+  right: 0;
+}

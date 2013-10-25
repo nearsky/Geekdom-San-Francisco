@@ -1,0 +1,23 @@
+{header_sanantonio}
+<article id="news" class="content container">
+  <div class="dot-border"></div>
+  <div class="center">
+    <h1>Geekdom News</h1>
+  </div>
+  <div class="dot-border"></div>
+
+  <div>
+    {exp:channel:entries channel="press_articles"}
+    <div class="press-article">
+      <h3>{title}</h3>
+      <p>
+	{article_description}<br />
+	<a href="{article_link}" target="_blank">Read Article <span class="icon batch-arrow-right"></span></a>
+      </p>
+    </div>
+    {/exp:channel:entries}
+  </div>
+
+</article>
+
+{footer_site}

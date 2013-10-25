@@ -1,0 +1,76 @@
+article#mission #pillars {
+  margin: 15px auto;
+  padding: 10px 0;
+  text-align: center;
+  *zoom: 1;
+}
+
+article#mission #pillars:before,
+article#mission #pillars:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+article#mission #pillars:after {
+  clear: both;
+}
+article#mission #pillars .pillar {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  text-align: center;
+  width: 250px;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: 1px solid #717171;
+
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+
+}
+article#mission #pillars .pillar .pillar-title {
+  padding: 30px 10px 20px;
+}
+article#mission #pillars .pillar .pillar-title .icon {
+  font-size: 30px;
+  line-height: 35px;
+}
+article#mission #pillars .pillar .pillar-title h3 {
+  color: #ce0f14;
+}
+article#mission #pillars .pillar .pillar-title h1 {
+  color: #000000;
+}
+article#mission #pillars .pillar.hovered {
+  background-color: #ce0f14;
+}
+article#mission #pillars .pillar.hovered .pillar-title h1,
+article#mission #pillars .pillar.hovered .pillar-title h3,
+article#mission #pillars .pillar.hovered .pillar-title .icon {
+  color: #fbfbfb;
+}
+article#mission #pillars .pillar .pillar-description {
+  position: absolute;
+  text-align: left;
+  left: 0;
+  margin-left: -1px;
+  top: 175px;
+  width: 250px;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 1px solid #717171;
+  border-top: none;
+  z-index: 1000;
+  background-color: #ffffff;
+  color: ;
+}
+
+.quote-red p {
+  color: #fbfbfb;
+  font-size: 1.15em;
+  line-height: 28px;
+}

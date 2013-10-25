@@ -1,0 +1,49 @@
+article#join #plans {
+  margin: 15px auto;
+  padding: 10px 0;
+}
+article#join #plans .plan {
+  text-align: center;
+  background-color: #efefef;
+  border: 1px solid #fbfbfb;
+  box-shadow: 0px 0px 2px #000000;
+  min-height: 500px;
+}
+article#join #plans .plan div {
+  width: 85%;
+  margin: 0 auto;
+}
+article#join #plans .plan div.plan-type {
+  border-bottom: 1px solid #c8c8c8;
+  margin: 10px auto;
+  padding: 15px 0;
+}
+article#join #plans .plan div.plan-price {
+  color: #fbfbfb;
+  background-color: #ce0f14;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 25px auto;
+}
+article#join #plans .plan div.plan-price h3 {
+  color: #fbfbfb;
+  padding-top: 40px;
+  font-size: 25px;
+}
+article#join #plans .plan div.plan-price h3:after {
+  content: "/mo";
+  font-size: 14px;
+}
+article#join #plans .plan div.plan-description {
+  font-size: 15px;
+  color: #000000;
+  margin: 10px auto;
+}
+article#join #plans .plan div.plan-description p {
+  font-size: 16px;
+  margin: 1px auto;
+}
+article#join #plans .plan div.apply {
+  margin: 25px auto;
+}

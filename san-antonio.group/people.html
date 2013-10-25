@@ -1,0 +1,123 @@
+{header_sanantonio}
+<article id="people" class="content container">
+{dot_border}
+<div class="center">
+  <h1>Geekdom Team</h1>
+  <h3>The smart people, members and ideas that call Geekdom home.</h3>
+</div>
+
+<div id="team">
+  <ul id="slider-team">
+    {exp:channel:entries channel="team_members" sort="asc"}
+      <li><img src="{tm_pic}" title='<h2>{title}</h2> <h3>{tm_title}</h3> <p>{tm_bio}</p> <p class="socials">{if "{tm_facebook}"}<a href="{tm_facebook}" target="_blank"><span class="facebook"></span></a>{/if} {if "{tm_twitter}"}<a href="{tm_twitter}" target="_blank"><span class="twitter"></span></a>{/if}</p>' /></li>
+    {/exp:channel:entries}
+  </ul>
+</div>
+
+{dot_border}
+
+<div id="mentors" class="clearfix">
+  <div class="center">
+    <h1>The Mentors</h1>
+    <h3>The smart people, members and ideas that call Geekdom home.</h3>
+  </div>
+  
+  <div id="mentors-list">
+    <?php $m = 1; ?>
+    <div class="row-fluid">
+    {exp:channel:entries channel="mentors" sort="asc"}
+      <?php if ($m == 4) {
+        echo '</div>';
+        echo '<div class="row-fluid">';
+        echo '<div class="mentor span4">';
+      } else {
+        echo '<div class="mentor span4">';
+      }
+      ?>
+        <img src="{mentor_pic}" />
+        <div class="mentor-info span12">
+          <h3>{title}</h3>
+          <p>{mentor_bio}</p>
+          
+          {if "{mentor_facebook}" OR "{mentor_twitter}"}
+          <p class="socials">
+            {if "{mentor_facebook}"}
+              <a href="{mentor_facebook}" target="_blank"><span class="facebook"></span></a>
+            {/if}
+            {if "{mentor_twitter}"}
+              <a href="{mentor_twitter}" target="_blank"><span class="twitter"></span></a>
+            {/if}
+          </p>
+          {/if}
+        </div>
+      </div>
+      <?php $m++; ?>
+    {/exp:channel:entries}
+    </div>
+  </div>
+  
+</div>
+
+{dot_border}
+
+<div id="startups" class="row-fluid">
+  <div class="span4">
+    <h1>Startups &amp; Businesses</h1>
+    <p>These are the talented teams and companies that are changing the world with their big ideas, unrelenting passion and plenty of geekery.</p>
+    <a href="/san-antonio/join" class="pad">Add Your Startup >></a>
+    
+    <div class="video">
+      <a data-fancybox-type="iframe" href="http://player.vimeo.com/video/68385518" class="video-fancy">
+        <img src="{image_dir}/startups_introvideo_thumb.png" />
+      </a>
+    </div>
+    
+  </div>
+
+  <div id="startup-logos" class="span8">
+    <div class="row-fluid">
+      <?php $s = 1; ?>
+      <div class="row-fluid">
+      {exp:channel:entries channel="startups" orderby="random" limit="30"}
+        <?php 
+        if (($s % 5) == 0) {
+          echo '</div>';
+          echo '<div class="row-fluid">';
+        } else { ?>
+        <div class="span3 startup">
+          <a href="{startup_url}" target="_blank">
+            <img src="{startup_logo}" />
+          </a>
+        </div>
+        <?php } ?>
+        <?php $s++; ?>
+      {/exp:channel:entries}
+      </div>
+    </div>
+  </div>
+</div>
+
+{dot_border}
+
+<div id="members">
+  <div class="center">
+    <h1>The Members</h1>
+    <h3>Some of the 600+ members that call Geekdom home. <a href="#" id="see-more-geeks">See More.</a></h3>
+  </div>
+
+  <div id="members-container">
+  {embed="global_embeds/members"}
+  </div>
+</div>
+
+{dot_border}
+
+<div class="cta">
+  <h2>Come hang out with us!</h2>
+  <a href="/san-antonio/join" class="red-btn">Sign Me Up!</a>
+</div>
+
+{dot_border}
+
+</article>
+{footer_site}

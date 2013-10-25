@@ -1,0 +1,165 @@
+{header_site}
+<article id="gd-location" class="content">
+  <div id="welcome-container">
+    <div id="welcome" class="container">
+      <div class="row-fluid">
+        <div id="whatis" class="span4">
+          <h1>What is Geekdom?</h1>
+          <p>Geekdom is a new kind of <span class="highlight">collaborative coworking space</span> where Entrepreneurs, Technologists, Developers, Makers & Creatives help each other build businesses & other cool things together.</p>
+          <div>
+            <a href="/tour" class="red-btn">Take the Tour</a>
+          </div>
+        </div>
+      
+        <div id="welcome-video" class="span8">
+          <div id="play">
+            <a data-fancybox-type="iframe" href="http://player.vimeo.com/video/57970105" class="video-fancy">
+              <div>
+                <img src="{image_dir}/vid-box.png" />
+              </div>
+              <div>
+                Watch the Intro Video
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div><!-- row-fluid -->
+    </div><!-- container -->
+  </div><!-- #welcoming -->
+  
+  <div id="startups" class="container">
+    <div class="row-fluid">
+      <div class="span2">
+        <h2>Home to over 200 Startups!</h2>
+      </div>
+      
+      <div id="startups-list" class="span10 row-fluid">
+        {exp:channel:entries channel="startups" limit="6" orderby="random"}
+          <div class="span2 startup">
+          <a href="{startup_url}" target="_blank">
+            <img src="{startup_logo}" />
+          </a>
+          </div>
+        {/exp:channel:entries}
+      </div>
+    </div>
+  </div><!-- startups -->
+  
+  <div class="container">
+    <div class="quote-gray row-fluid">
+      <div class="span2">
+        <div class="icon left-double-quote"></div>
+      </div>
+      <div class="span10">
+        <em>Geekdom is the largest coworking space in Texas. 45,000 Sq Ft of Geeks and Entrepreneurs.</em>
+      </div>
+    </div>
+  </div><!-- quote -->
+  
+  {dot_border}
+  
+  <div id="signup" class="container">
+    <div class="row-fluid">
+      <div class="span4">
+        <h2>No contracts.</h2>
+        <h2>No deposits.</h2>
+        <h2>No landlords.</h2>
+        <h2 class="red">Just smart people changing the world.</h2>
+        <div id="perks">
+          <ul>
+            {exp:channel:entries channel="perks" orderby="entry_id" limit="5" sort="asc"}
+              <li class="perk"><span class="icon batch-star"></span> {title}</li>
+            {/exp:channel:entries}
+          </ul>
+        </div>
+        
+        <div class="pad">
+          <h2><a href="/tour" id="tour-btn">Take a Tour</a></h2>
+        </div>
+        
+      </div>
+
+      <div id="plans" class="row-fluid span8">
+        <div class="plan span6">
+          <div class="plan-type">
+            <h2>Hot Desk</h2>
+          </div>
+          <div class="plan-details">
+            <div class="plan-price">
+              <h3>$50</h3>
+            </div>
+            <div class="plan-description">
+              <p>Shared Community Space</p>
+              <p>Available Desk in Community Areas</p>
+              <p>24-7 Access</p>
+              <p>2 Hours/m Conference Room</p>
+            </div>
+          </div>
+          <div class="apply">
+            <a href="/signup" class="red-btn">Apply Now</a>
+          </div>
+        </div><!-- .plan -->
+        
+        <div class="plan span6">
+          <div class="plan-type">
+            <h2>Startups</h2>
+          </div>
+          <div class="plan-details">
+            <div class="plan-price">
+              <h3>$150</h3>
+            </div>
+            <div class="plan-description">
+              <p>Dedicated Personal Desk</p>
+              <p>Shared Office Space</p>
+              <p>24-7 Access</p>
+              <p>Mailing Address &amp; Parking</p>
+              <p>Unlimited Conference Rm Use</p>
+            </div>
+          </div>
+          <div class="apply">
+            <a href="/signup" class="red-btn">Apply Now</a>
+          </div>
+        </div><!-- .plan -->
+      </div><!-- #plans -->
+    </div><!-- row -->
+  </div><!-- #signup -->
+
+  {dot_border}
+  
+  <div id="members">  
+    {embed="global_embeds/members"}
+  </div>
+  
+  {dot_border}
+
+  <div id="events" class="container">
+    <div class="row-fluid">
+      <div id="events-list" class="span8">
+        <h1 class="black">Let's get together and hang out.</h1>
+        <h3>We're a pretty lively bunch over here, there's always something cool going on.</h3>
+        <div class="pad"></div>
+        {exp:magpie url="http://www.google.com/calendar/feeds/info%40geekdom.com/public/full?orderby=starttime&sortorder=a&futureevents=true&fields=entry(title,gd:when,content,link)" limit="3" refresh="720"}
+          {items}
+            {events}
+          {/items}
+        {/exp:magpie}
+      </div>
+
+      <div class="span4">
+        <div class="red-box">
+          <h1>Looking for a great place to host your event?</h1>
+          <p class="small">Send us a message about your party or event and we'll be sure to contact you.</p>
+        </div>
+        <div class="pad">
+          <a href="/contact" class="black-btn">Contact Us</a>
+        </div>
+
+        <div class="pad-big">
+          <a href="/events" class="red-btn">View Full Calendar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+{footer_site}

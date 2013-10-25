@@ -1,0 +1,140 @@
+{header_sanantonio}
+<article id="events" class="content container">
+{dot_border}
+<div class="center">
+	<h1>Events</h1>
+	<h3>We're a pretty lively bunch over here.  There is always something cool going on.</h3>
+</div>
+	
+
+<div class="row-fluid">
+  <div id="events-list" class="span8"></div>
+
+
+  <script type="text/javascript">
+  function formatHours(hour) {
+    if (hour > 12)
+      hour = hour - 12;
+    return hour;
+  }
+  
+  function isAmOrPm(hour) {
+    if (hour >= 12)
+      return "PM";
+    else
+      return "AM";
+  }
+  
+  function formatMinutes(minute) {
+    if (minute < 10)
+      minute = "0" + minute;
+    return minute;
+  }
+  
+  function formatMonth(month) {
+    switch (month) {
+      case 0:
+        return "Jan";
+        break;
+      case 1:
+        return "Feb";
+      case 2:
+        return "Mar";
+      case 3:
+        return "Apr";
+      case 4:
+        return "May";
+      case 5:
+        return "Jun";
+      case 6:
+        return "Jul";
+      case 7:
+        return "Aug";
+      case 8:
+        return "Sep";
+      case 9:
+        return "Oct";
+      case 10:
+        return "Nov";
+      case 11:
+        return "Dec";
+    }
+  }
+
+  $(document).ready(function(){
+    var feedUrl = "http://www.google.com/calendar/feeds/info%40geekdom.com/public/full?orderby=starttime&sortorder=a&futureevents=true&fields=entry(title,gd:when,content,link)&alt=json";
+    var feedUrl = "http://www.google.com/calendar/feeds/geekdomllc%40gmail.com/public/full?orderby=starttime&sortorder=a&futureevents=true&fields=entry(title,gd:when,content,link)&alt=json";
+  		  
+    $.getJSON(feedUrl, function(data){
+      $.each(data.feed.entry, function(i, item){
+        if(i > 0 && i <= 7) {
+          var event_url = item.link[0].href;
+          var event_title = item.title.$t;
+          var event_content = item.content.$t;
+          
+          var event_date = new Date(item.gd$when[0].startTime);
+          var event_day = event_date.getDate();
+          var event_month = formatMonth(event_date.getMonth());
+
+          var event_hours = formatHours(event_date.getHours());
+          var event_minutes = formatMinutes(event_date.getMinutes());
+          var ampm = isAmOrPm(event_date.getHours());
+          var event_time = event_hours + ':' + event_minutes + ampm;
+          
+          $('#events-list').append(
+            "<div class='event row-fluid'>"
+            + "<div class='event-date span2'>"
+            + "<div class='event-month'>"
+            + event_month
+            + "</div>"
+            + "<div class='event-day'>"
+            + event_day 
+            + "</div>"
+            + "<div class='event-time'>"
+            + event_time
+            + "</div>"
+            + "</div>"
+            + "<div class='span10'>"
+            + "<h3 class='event-title red'>"
+            + event_title
+            + "</h3>"
+            + "<p class='event-content'>"
+            + event_content
+            + "</p>"
+            + "<a href='"
+            + event_url
+            + "' target='_blank'>Event Details <span class='icon batch-arrow-right'></span></a>"
+            + "</div>"
+            + "</div>"
+          );
+        }
+      });
+    });
+    
+  });
+  </script>
+
+	<!-- break -->
+
+	<div class="span4">
+		<div class="red-box">
+			<h1>Looking for a great place to host your event?</h1>
+			<p class="small">Send us a message about your party or event. We'll be sure to follow up.</p>
+		</div>
+
+		<div class="pad">
+			<a href="/san-antonio/contact" class="black-btn">Contact Us</a>
+		</div>
+
+		<h2>Join us and attend these awesome events for free!</h2>
+
+		<div class="pad">
+		<a href="/san-antonio/join" class="red-btn">Sign Me Up!</a>
+		</div>
+	</div>
+</div>
+
+
+{dot_border}
+</article>
+{footer_site}

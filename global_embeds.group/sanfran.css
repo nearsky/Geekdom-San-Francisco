@@ -1,0 +1,76 @@
+/* @override 
+	http://geekdom.com/themes/geekdom/default_site/global_embeds.group/sanfran.css */
+
+div#funding-btn {
+  visibility:hidden;
+}
+
+article#sanantonio #welcome-container {
+	background-image: url('http://geekdom.com/themes/geekdom/default_site/images/bg-sf-home.jpg');
+	height: 300px;
+	font-weight: bold;
+}
+
+#whatis p {
+	font: bold 28px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	line-height: px;
+}
+
+.red {
+	color: #ce0e13;
+}
+
+.pillar-description {
+	display: inline-block;
+	height: 180px;
+}
+
+
+
+#pillars {
+	height: 250px;
+}
+
+#div.whatis {
+	
+}
+
+article#sanantonio #welcome #whatis {
+	background-color: rgba(255, 255, 255, 0);
+}
+
+article#mission #pillars .pillar .pillar-description {
+  top: 50px;
+  width: 250px;
+  font-size: 16px;
+  margin-top: 0px;
+  padding: 0px 20px;
+  border: none;
+  text-align: left;
+  
+}
+
+article#mission #pillars .pillar {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  text-align: center;
+  width: 250px;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border:none;
+  }
+  
+  article#mission #pillars .pillar .pillar-title {
+    padding: 0px 0px 0px;
+  }
+  
+  article#mission #pillars .pillar {
+  	text-align: left;
+  	padding-top: 0px;
+  	padding-bottom: 0px;
+  	margin-top: 0px;
+  	margin-bottom: 0px;
+  }
+

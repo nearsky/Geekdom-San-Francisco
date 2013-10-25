@@ -1,0 +1,406 @@
+/* ============================ */
+/* SAN ANTONIO */
+article#sanantonio {
+  position: relative;
+  margin-top: 0;
+}
+
+article#sanantonio #welcome-container {
+  position: relative;
+  top: 0;
+  margin-top: 0;
+  height: 500px;
+  background-image: url('{site_url}themes/geekdom/default_site/images/bg-sa-home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  padding-top: 45px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;  
+  
+}
+
+article#sanantonio #welcome #whatis {
+  background-color: #000;
+  color: #fbfbfb;
+  padding: 15px;  
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+article#sanantonio #welcome #whatis h1 {
+  color: #fbfbfb;
+}
+
+article#sanantonio #welcome-video {
+  position: relative;
+  min-height: 400px;
+  box-sizing: border-box;
+  background-image: url('{site_url}themes/geekdom/default_site/images/bg-sa-vid-2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+  border: 5px solid #fbfbfb;
+  
+}
+
+article#sanantonio #play {
+  text-align: center;  
+  margin-top: 75px;
+}
+
+article#sanantonio #play-box {
+  margin: 60px auto 10px;
+  height: 150px;
+  width: 250px;
+  border: 5px solid white;
+  border-radius: 5px;
+  background-image: url('{site_url}themes/geekdom/default_site/images/vid-box.png');
+  background-position: center center;
+  background-size: cover;
+}
+
+article#sanantonio #play a { color: #fff; }
+
+article#sanantonio .quote-gray .span10 {
+  padding-top:15px;
+}
+
+article#sanantonio #startups {
+  margin: 25px auto;
+}
+
+article#sanantonio #tour-btn {
+  width: 75%;
+  margin: 15px auto 20px;
+}
+
+article#sanantonio #signup {
+  margin: 25px auto;
+}
+
+/* PLANS */
+#plans {
+  margin: 15px auto;
+  padding: 10px 0;
+}
+#plans .plan {
+  position: relative;
+  text-align: center;
+  background-color: #efefef;
+  border: 1px solid #fbfbfb;
+  box-shadow: 0px 0px 2px #000000;
+}
+#plans .plan div {
+  width: 85%;
+  margin: 0 auto;
+}
+#plans .plan div.plan-type {
+  border-bottom: 1px solid #c8c8c8;
+  margin: 10px auto;
+  padding: 15px 0;
+}
+#plans .plan div.plan-price {
+  color: #fbfbfb;
+  background-color: #ce0f14;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 25px auto;
+}
+#plans .plan div.plan-price h3 {
+  color: #fbfbfb;
+  padding-top: 40px;
+  font-size: 25px;
+}
+#plans .plan div.plan-price h3:after {
+  content: "/mo";
+  font-size: 14px;
+}
+#plans .plan div.plan-description {
+  font-size: 15px;
+  color: #000000;
+  margin: 10px auto;
+}
+#plans .plan div.plan-description p {
+  font-size: 15px;
+  margin: 1px auto;
+}
+#plans .plan div.apply {
+  margin: 25px auto;
+}
+
+#plans .plan div.startups {
+  position: absolute;
+  display: block;
+  background-color: #000;
+  color: #fbfbfb;
+  top: 440px;
+  left: 12px;
+  padding: 5px 10px;
+  margin: 0 auto;
+}
+
+/* ============================ */
+/* CONTACT */
+article#contact {
+  margin-top: 45px;
+}
+
+article#contact #contact-form {
+  margin: 40px auto;
+
+}
+
+article#contact #contact-form label {
+  text-align: right;
+  line-height: 28px;
+  padding-top: 10px;
+
+}
+
+article#contact #contact-form select {
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none !important; 
+  appearance: none;
+}
+
+article#contact #contact-form input[type="text"],
+article#contact #contact-form input[type="email"],
+article#contact #contact-form select,
+article#contact #contact-form textarea {
+  padding: 12px;
+  margin: 0 auto 10px;
+  border: 3px solid #efefef;
+  border-radius: 0;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 99%;
+  
+}
+
+article#contact input.fn,
+article#contact input.ln {
+  width: 48%;
+}
+
+article#contact #contact-form textarea {
+  width: 100%;
+  height: 285px;
+  margin: 0;
+}
+
+/* ============================ */
+/* EVENTS */
+article#events {}
+article#events .center {
+  margin-bottom: 45px;
+}
+
+/* ============================ */
+/* JOIN */
+article#join #plans {
+  margin: 15px auto;
+  padding: 10px 0;
+}
+article#join #plans .plan {
+  text-align: center;
+  background-color: #efefef;
+  border: 1px solid #fbfbfb;
+  box-shadow: 0px 0px 2px #000000;
+  min-height: 500px;
+}
+article#join #plans .plan div {
+  width: 85%;
+  margin: 0 auto;
+}
+article#join #plans .plan div.plan-type {
+  border-bottom: 1px solid #c8c8c8;
+  margin: 10px auto;
+  padding: 15px 0;
+}
+article#join #plans .plan div.plan-price {
+  color: #fbfbfb;
+  background-color: #ce0f14;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 25px auto;
+}
+article#join #plans .plan div.plan-price h3 {
+  color: #fbfbfb;
+  padding-top: 40px;
+  font-size: 25px;
+}
+article#join #plans .plan div.plan-price h3:after {
+  content: "/mo";
+  font-size: 14px;
+}
+article#join #plans .plan div.plan-description {
+  font-size: 15px;
+  color: #000000;
+  margin: 10px auto;
+}
+article#join #plans .plan div.plan-description p {
+  font-size: 16px;
+  margin: 1px auto;
+}
+article#join #plans .plan div.apply {
+  margin: 25px auto;
+}
+
+/* ============================ */
+/* MISSION */
+article#mission #pillars {
+  margin: 15px auto;
+  padding: 10px 0;
+  text-align: center;
+  *zoom: 1;
+}
+
+article#mission #pillars:before,
+article#mission #pillars:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+article#mission #pillars:after {
+  clear: both;
+}
+article#mission #pillars .pillar {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  text-align: center;
+  width: 250px;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: 1px solid #717171;
+
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+
+}
+article#mission #pillars .pillar .pillar-title {
+  padding: 30px 10px 20px;
+}
+article#mission #pillars .pillar .pillar-title .icon {
+  font-size: 30px;
+  line-height: 35px;
+}
+article#mission #pillars .pillar .pillar-title h3 {
+  color: #ce0f14;
+}
+article#mission #pillars .pillar .pillar-title h1 {
+  color: #000000;
+}
+article#mission #pillars .pillar.hovered {
+  background-color: #ce0f14;
+}
+article#mission #pillars .pillar.hovered .pillar-title h1,
+article#mission #pillars .pillar.hovered .pillar-title h3,
+article#mission #pillars .pillar.hovered .pillar-title .icon {
+  color: #fbfbfb;
+}
+article#mission #pillars .pillar .pillar-description {
+  position: absolute;
+  text-align: left;
+  left: 0;
+  margin-left: -1px;
+  top: 175px;
+  width: 250px;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 1px solid #717171;
+  border-top: none;
+  z-index: 1000;
+  background-color: #ffffff;
+  color: ;
+}
+
+.quote-red p {
+  color: #fbfbfb;
+  font-size: 1.15em;
+  line-height: 28px;
+}
+
+/* PEOPLE */
+article#people {}
+
+article#people #team {
+  margin-bottom: 65px;
+}
+
+article#people #mentors .row-fluid {
+  margin: 15px auto;
+}
+
+article#people #members .row-fluid {
+  margin: 15px auto;
+}
+
+article#people #members #members-list img {
+  border-radius: 4px;
+}
+
+article#people .video {
+  margin-top: 25px;
+}
+
+article#people .mentor {
+  position: relative;
+  cursor: pointer;
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+
+}
+
+article#people .mentor-info h3 { color: #fbfbfb; }
+article#people .mentor-info a { color: #fbfbfb; }
+
+article#people .mentor-info {
+  position: absolute;
+  text-align: left;
+  left: 0 !important;
+  margin-left: 0px !important;
+  top: 167px;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+  background-color: #CE0F14;
+  color: #fbfbfb;
+  
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+/* ============================ */
+/* TOUR */
+article#tour {
+  margin-top: 45px;
+}
+
+article#tour #intro .blurb-bubble h1 {
+  padding-top: 55px !important;
+}
+
+article#tour .quote-gray .span10 {
+  font-size: 1.5em;
+  font-weight: bold;
+}

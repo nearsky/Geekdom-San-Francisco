@@ -1,0 +1,133 @@
+article#gd-location {
+  position: relative;
+  margin-top: 0;
+}
+
+#welcome-container {
+  position: relative;
+  top: 0;
+  margin-top: 0;
+  height: 500px;
+  background-image: url('{site_url}themes/geekdom/default_site/images/bg-sa-home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  padding-top: 45px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;  
+  
+}
+
+
+
+#welcome #whatis {
+  background-color: #000;
+  color: #fbfbfb;
+  padding: 15px;  
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+#welcome #whatis h1 {
+  color: #fbfbfb;
+}
+
+#welcome-video {
+  position: relative;
+  min-height: 400px;
+  box-sizing: border-box;
+  background-image: url('{site_url}themes/geekdom/default_site/images/bg-sa-vid-2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+  border: 5px solid #fbfbfb;
+  
+}
+
+#play {
+  text-align: center;  
+  margin-top: 75px;
+}
+
+#play-box {
+  margin: 65px auto 10px;
+  height: 150px;
+  width: 250px;
+  border: 5px solid white;
+  border-radius: 5px;
+  background-image: url('{site_url}themes/geekdom/default_site/images/vid-box.png');
+  background-position: center center;
+  background-size: cover;
+}
+
+#play a { color: #fff; }
+
+.quote-gray .span10 {
+  padding-top:15px;
+}
+
+#startups {
+  margin: 25px auto;
+}
+
+#tour-btn {
+  width: 75%;
+  margin: 15px auto 20px;
+}
+
+#signup {
+  margin: 25px auto;
+}
+
+/* PLANS */
+#plans {
+  margin: 15px auto;
+  padding: 10px 0;
+}
+#plans .plan {
+  text-align: center;
+  background-color: #efefef;
+  border: 1px solid #fbfbfb;
+  box-shadow: 0px 0px 2px #000000;
+}
+#plans .plan div {
+  width: 85%;
+  margin: 0 auto;
+}
+#plans .plan div.plan-type {
+  border-bottom: 1px solid #c8c8c8;
+  margin: 10px auto;
+  padding: 15px 0;
+}
+#plans .plan div.plan-price {
+  color: #fbfbfb;
+  background-color: #ce0f14;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 25px auto;
+}
+#plans .plan div.plan-price h3 {
+  color: #fbfbfb;
+  padding-top: 40px;
+  font-size: 25px;
+}
+#plans .plan div.plan-price h3:after {
+  content: "/mo";
+  font-size: 14px;
+}
+#plans .plan div.plan-description {
+  font-size: 15px;
+  color: #000000;
+  margin: 10px auto;
+}
+#plans .plan div.plan-description p {
+  font-size: 15px;
+  margin: 1px auto;
+}
+#plans .plan div.apply {
+  margin: 25px auto;
+}

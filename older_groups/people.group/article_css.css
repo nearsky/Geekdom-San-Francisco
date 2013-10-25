@@ -1,0 +1,62 @@
+article#people {
+
+}
+
+#team {
+  margin-bottom: 65px;
+}
+
+#mentors .row-fluid {
+  margin: 15px auto;
+}
+
+#members .row-fluid {
+  margin: 15px auto;
+}
+
+#members #members-list img {
+  border-radius: 4px;
+}
+
+.video {
+  margin-top: 25px;
+}
+
+.mentor {
+  position: relative;
+  cursor: pointer;
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+
+}
+
+
+.mentor-info h3 {
+  color: #fbfbfb;
+}
+
+.mentor-info a {
+  color: #fbfbfb;
+}
+
+.mentor-info {
+  position: absolute;
+  text-align: left;
+  left: 0 !important;
+  margin-left: 0px !important;
+  top: 167px;
+  font-size: 16px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+  background-color: #CE0F14;
+  color: #fbfbfb;
+  
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
